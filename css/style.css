@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url('../fonts/lato.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.header {
+  display: inline-block;
+  background: #313a3c;
+  color: #efefef;
+  padding: 12px;
+  font-size: 1.3em;
+  margin-bottom: 80px;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+#regexLabel {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  background: #313a3c;
+  color: #b6b6b6;
+  padding: 12px;
+  font-size: 1em;
+  transition: color 200ms ease;
+}
+
+#regex {
+  border: none;
+  background: #e8e9ea;
+  width: 100%;
+  margin: 0;
+  padding: 12px;
+  color: #313a3d;
+  font-size: 1.4em;
+  letter-spacing: 0.05em;
+  outline: none;
+  border-bottom: 3px solid;
+  border-color: transparent;
+  transition: all 0.3s ease;
+}
+
+#regex:focus {
+  border-color: hsla(190, 10%, 20%, 0.4);
+}
+
+#regex:focus + #regexLabel {
+  color: #ebebeb;
+}
+
+.center {
+  text-align: center;
+}
+
+#submit {
+  border: none;
+  background: #313a3c;
+  color: #b6b6b6;
+  padding: 12px 24px;
+  font-size: 1.2em;
+  cursor: pointer;
+  outline: none;
+  margin-top: 30px;
+  transition: all 200ms ease;
+}
+
+#submit:hover {
+  background: #445153;
+  color: #ebebeb;
+}
+
+#submit:active {
+  background: #3f4a4d;
+  color: #cccccc;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.shadow:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.status {
+  font-size: 1.1em;
+  opacity: 0;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.error {
+  color: #ee5253;
+}
+
+.success {
+  color: #10ac84;
+}
+
+.social {
+  margin-top: 20px;
+}
+
+.social a {
+  text-decoration: none;
+}
+
+.social a:not(:last-child) {
+  margin-right: 20px;
+}
