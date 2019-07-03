@@ -8,7 +8,7 @@ You can change the format of the passwords by using regex in the options
 
 ## Why?
 
-I made this because I didn't like the flexibility of LastPass's password generation
+I made this because I didn't like LastPass's password generation
 
 ## Cool, where do I get it?
 
